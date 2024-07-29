@@ -74,39 +74,6 @@ def main():
     # 구분선
     st.markdown("---")
 
-    # 스타일링 코드 추가
-    st.markdown(
-        """
-        <style>
-        /* 배경색을 연한 하늘색으로 변경 */
-        .main .block-container {
-            background-color: #E0F7FA; /* 연한 하늘색 */
-        }
-
-        /* 사이드바 배경색 설정 */
-        .sidebar .sidebar-content {
-            background-color: #E0F7FA; /* 연한 하늘색 */
-            border-right: 1px solid #B0BEC5; /* 약간의 회색 테두리 */
-        }
-
-        /* 오디오 녹음 버튼과 주변 영역 스타일링 */
-        .st-audiorecorder-label {
-            color: #007AFF; /* 텍스트 색상 */
-        }
-
-        .st-audiorecorder-button {
-            background-color: white; /* 버튼 배경색 흰색 */
-            color: #007AFF; /* 버튼 텍스트 색상 */
-            border: 2px solid #007AFF; /* 버튼 테두리 색상 */
-            border-radius: 5px; /* 둥근 테두리 */
-            padding: 10px 20px; /* 버튼 내 여백 */
-            cursor: pointer; /* 마우스 커서 변경 */
-        }
-        </style>
-        """,
-        unsafe_allow_html=True
-    )
-
     # 기본 설명
     with st.expander("음성비서 프로그램에 관하여", expanded=True):
         st.write(
