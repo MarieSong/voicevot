@@ -36,7 +36,7 @@ def ask_gpt(prompt, model):
 def TTS(response):
     # gTTS 를 활용하여 음성 파일 생성
     filename = "output.mp3"
-    tts = gTTS(text=response,lang="en")
+    tts = gTTS(text=response,lang="ko")
     tts.save(filename)
 
     # 음원 파일 자동 재생
